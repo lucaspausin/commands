@@ -24,7 +24,9 @@ import Aside from "@/components/Aside";
 import axios from "axios";
 
 async function loadReservations() {
-	const { data } = await axios.get("http://localhost:3000/api/reservations");
+	const { data } = await axios.get(
+		`${process.env.NEXT_PUBLIC_API_URL}/api/reservations`
+	);
 	return data.results;
 }
 
