@@ -3,15 +3,9 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-	BarChart3,
 	ChevronLeft,
-	ClipboardList,
-	Download,
-	Home,
-	PlusCircle,
-	Settings,
 	User,
-	Ticket,
+
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
