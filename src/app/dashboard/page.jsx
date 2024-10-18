@@ -22,30 +22,22 @@ import axios from "axios";
 
 import Aside from "@/components/Aside";
 async function loadReservations() {
-	const { data } = await axios.get(
-		`${process.env.NEXT_PUBLIC_API_URL}/api/reservations`
-	);
+	const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/reservations`);
 	return data.results;
 }
 
 async function loadOrders() {
-	const { data } = await axios.get(
-		`${process.env.NEXT_PUBLIC_API_URL}/api/orders`
-	);
+	const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/orders`);
 	return data.results;
 }
 
 async function loadOrdersMonth() {
-	const { data } = await axios.get(
-		`${process.env.NEXT_PUBLIC_API_URL}/api/orders/summary`
-	);
+	const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/orders/summary`);
 	return data;
 }
 
 async function loadReservationsMonth() {
-	const { data } = await axios.get(
-		`${process.env.NEXT_PUBLIC_API_URL}/api/reservations/summary`
-	);
+	const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/reservations/summary`);
 	return data;
 }
 
